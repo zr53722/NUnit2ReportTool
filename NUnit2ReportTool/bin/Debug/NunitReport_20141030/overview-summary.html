@@ -1,0 +1,29 @@
+﻿<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><head><title>Unit Test Results: Summary</title><link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css"></link><script language="JavaScript">
+	  function Toggle(id) {
+	  var element = document.getElementById(id);
+
+		 if ( element.style.display == "none" )
+			element.style.display = "block";
+		 else 
+			element.style.display = "none";
+	  }
+
+	  function ToggleImage(id) {
+	  var element = document.getElementById(id);
+
+		 if ( element.innerText   == "-" )
+			element.innerText   = "+";
+		 else 
+			element.innerText = "-";
+	  }
+	</script></head><body onload="open('allclasses-frame.html','classListFrame')"><h1><span>单元测试结果</span> -  </h1><table width="100%"><tr><td align="left"><span>生成工具</span>: <a target="_blank" href="http://sourceforge.net/projects/nunit2report/">NUnit2Report</a>  2014-10-30 10:53:31  <a href="#" onclick="javascript:Toggle('blabla')">环境信息</a></td><td align="right"><span>相关项目</span>: <a href="http://nunit.sourceforge.net/">NUnit</a><span>和</span><a href="http://nant.sourceforge.net/">NAnt</a>.
+		</td></tr></table><hr size="1"></hr><div style="display: none;" id="blabla"><a name="envinfo"></a><h2>环境信息</h2><table border="0" cellpadding="5" cellspacing="2" width="95%"><tr class="EnvInfoHeader"><td>属性</td><td>值</td></tr><tr class="EnvInfoRow"><td>Nant 路径</td><td></td></tr><tr class="EnvInfoRow"><td>Nant 版本</td><td></td></tr><tr class="EnvInfoRow"><td>Build 文件</td><td></td></tr><tr class="EnvInfoRow"><td>基本目录</td><td></td></tr><tr class="EnvInfoRow"><td>操作系统</td><td></td></tr><tr class="EnvInfoRow"><td>.NET CLR 版本</td><td></td></tr></table><hr size="1" width="95%" align="left"></hr></div><h2>摘要</h2><table border="0" cellpadding="2" cellspacing="0" width="95%" style="border: #dcdcdc 1px solid;"><tr valign="top" class="TableHeader"><td><b>通过</b></td><td><b>忽略</b></td><td><b>失败</b></td><td><b>成功比例</b></td><td nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass"><td>65</td><td>0</td><td>0</td><td width="280px">100.00 %<span class="covered" style="width:200px"><center>65</center></span><span class="total">
+					 65</span></td><td>15.342</td></tr></table><span>说明</span>: <i>忽略</i> <span>是预期的</span>  <i>失败</i> <span>是未预料到的</span><h2>测试集摘要</h2><table border="0" cellpadding="2" cellspacing="0" width="95%"><tr class="TableHeader" valign="top"><td width="75%" colspan="3"><b>名字</b></td><td width="5%"><b>通过</b></td><td width="5%"><b>忽略</b></td><td width="5%"><b>失败</b></td><td width="10%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/PipelineTest/ActionExecutorTest/ActionExecutorTest.html" class="">ActionExecutorTest</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>27</center></span><span class="total">
+							 27</span></td><td>27</td><td>0</td><td>0</td><td>0.434</td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/AppServiceTest/MasterDataAppServiceTest/MasterDataAppServiceTest.html" class="">MasterDataAppServiceTest</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>3</center></span><span class="total">
+							 3</span></td><td>3</td><td>0</td><td>0</td><td>6.102</td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/AppServiceTest/MasterDataAppServiceTest_1/MasterDataAppServiceTest_1.html" class="">MasterDataAppServiceTest_1</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>1</center></span><span class="total">
+							 1</span></td><td>1</td><td>0</td><td>0</td><td>0.070</td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/CommTest/PerformanceLogScopeTest/PerformanceLogScopeTest.html" class="">PerformanceLogScopeTest</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>1</center></span><span class="total">
+							 1</span></td><td>1</td><td>0</td><td>0</td><td>6.231</td></tr><tr valign="top" class="Failure"><td><a href="Mysoft/MAP2/Test/CommTest/RepositoryBaseTest/RepositoryBaseTest.html" class="Failure">RepositoryBaseTest</a></td><td width="15%" align="right"><b>95.24 %</b></td><td width="40%" height="9px"><span class="covered" style="width:190px"><center>20</center></span><span class="uncovered" style="width:10px"><center>1</center></span><span class="total">
+							 21</span></td><td>20</td><td>0</td><td>1</td><td>1.901</td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/CommTest/SQLServerDDLGeneratorTest/SQLServerDDLGeneratorTest.html" class="">SQLServerDDLGeneratorTest</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>5</center></span><span class="total">
+							 5</span></td><td>5</td><td>0</td><td>0</td><td>0.012</td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/CommTest/Test1/Test1.html" class="">Test1</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>1</center></span><span class="total">
+							 1</span></td><td>1</td><td>0</td><td>0</td><td>0.001</td></tr><tr valign="top" class="Pass"><td><a href="Mysoft/MAP2/Test/AppServiceTest/UserRightsAppServiceTest/UserRightsAppServiceTest.html" class="">UserRightsAppServiceTest</a></td><td width="15%" align="right"><b>100.00 %</b></td><td width="40%" height="9px"><span class="covered" style="width:200px"><center>6</center></span><span class="total">
+							 6</span></td><td>6</td><td>0</td><td>0</td><td>0.558</td></tr></table></body></html>

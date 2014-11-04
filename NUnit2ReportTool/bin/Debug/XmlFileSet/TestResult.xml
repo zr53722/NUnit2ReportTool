@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\bin\Debug\Mysoft.MAP2.Test.dll" total="65" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-10-30" time="10:53:31">
+  <environment nunit-version="2.6.2.12296" clr-version="4.0.30319.18408" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="D:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.UI.Utilities" machine-name="WH-ZHOUR" user="zhour" user-domain="MYSOFT" />
+  <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
+  <test-suite type="Assembly" name="D:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\bin\Debug\Mysoft.MAP2.Test.dll" executed="True" result="Failure" success="False" time="15.342" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Mysoft" executed="True" result="Failure" success="False" time="15.335" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="MAP2" executed="True" result="Failure" success="False" time="15.335" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="15.335" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="AppServiceTest" executed="True" result="Success" success="True" time="6.737" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="MasterDataAppServiceTest" executed="True" result="Success" success="True" time="6.102" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.MasterDataAppServiceTest.GetCompany" executed="True" result="Success" success="True" time="4.449" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.MasterDataAppServiceTest.GetCurrentUserGuid" executed="True" result="Success" success="True" time="0.058" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.MasterDataAppServiceTest.GetStandardRoleUserByBUGUID" executed="True" result="Success" success="True" time="0.203" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MasterDataAppServiceTest_1" executed="True" result="Success" success="True" time="0.070" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.MasterDataAppServiceTest_1.GetCurrentUserGuid" executed="True" result="Success" success="True" time="0.069" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="UserRightsAppServiceTest" executed="True" result="Success" success="True" time="0.558" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.UserRightsAppServiceTest.GetUserProjectIds" executed="True" result="Success" success="True" time="0.189" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.UserRightsAppServiceTest.GetUserProjects" executed="True" result="Success" success="True" time="0.092" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.UserRightsAppServiceTest.GetUserPublicAccounts" executed="True" result="Success" success="True" time="0.071" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.UserRightsAppServiceTest.IsAdmin" executed="True" result="Success" success="True" time="0.053" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.UserRightsAppServiceTest.IsCurrentUserAdmin" executed="True" result="Success" success="True" time="0.070" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.AppServiceTest.UserRightsAppServiceTest.IsDisabledUser" executed="True" result="Success" success="True" time="0.069" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="CommTest" executed="True" result="Failure" success="False" time="8.154" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="PerformanceLogScopeTest" executed="True" result="Success" success="True" time="6.231" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.CommTest.PerformanceLogScopeTest.ExecutionTest" executed="True" result="Success" success="True" time="6.229" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="RepositoryBaseTest" executed="True" result="Failure" success="False" time="1.901" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.CreateTest" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.DeleteTest" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.FindByIdTest" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.FindTest" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_01" executed="True" result="Error" success="False" time="0.198" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.ArgumentException : 不支持表达式的类型
+参数名: expression]]></message>
+                              <stack-trace><![CDATA[在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.InternalCalculateSql(Expression baseExpression, Expression expression) 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 113
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.ProcessBinaryExpression(Expression baseExpression, BinaryExpression expression) 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 290
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.InternalCalculateSql(Expression baseExpression, Expression expression) 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 110
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.ProcessBinaryExpression(Expression baseExpression, BinaryExpression expression) 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 276
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.InternalCalculateSql(Expression baseExpression, Expression expression) 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 110
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.Parse() 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 67
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.Select`1.BuildAttributes() 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\Select.cs:行号 114
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.QueryPlan`1.BuildSql() 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\QueryPlan.cs:行号 77
+在 Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.<SelectExpressionTest_01>b__c() 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\CommTest\RepositoryBaseTest.cs:行号 153
+在 Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.InitEnvironment(Action action) 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\CommTest\RepositoryBaseTest.cs:行号 428
+在 Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_01() 位置 d:\Map2\运行&建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\CommTest\RepositoryBaseTest.cs:行号 148
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_02" executed="True" result="Success" success="True" time="0.050" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_03" executed="True" result="Success" success="True" time="0.058" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_04" executed="True" result="Success" success="True" time="0.067" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_05" executed="True" result="Success" success="True" time="0.051" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_06" executed="True" result="Success" success="True" time="0.116" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_07" executed="True" result="Success" success="True" time="0.067" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_08" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_09" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_10" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_Add" executed="True" result="Success" success="True" time="0.085" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_like_all" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_like_left" executed="True" result="Success" success="True" time="0.049" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_like_right" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_Subtract" executed="True" result="Success" success="True" time="0.084" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.UpdateTest" executed="True" result="Success" success="True" time="0.057" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SQLServerDDLGeneratorTest" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.CommTest.SQLServerDDLGeneratorTest.Test_IsTableExists_Error" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.SQLServerDDLGeneratorTest.Test_IsTableExists_OK" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.SQLServerDDLGeneratorTest.Test_NameChecker_VerifyName_Error" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.SQLServerDDLGeneratorTest.Test_NameChecker_VerifyName_Error2" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                          <test-case name="Mysoft.MAP2.Test.CommTest.SQLServerDDLGeneratorTest.Test_NameChecker_VerifyName_OK" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="Test1" executed="True" result="Success" success="True" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.CommTest.Test1.ABC" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="PipelineTest" executed="True" result="Success" success="True" time="0.434" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="ActionExecutorTest" executed="True" result="Success" success="True" time="0.434" asserts="0">
+                        <results>
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ActionIsFormTest" executed="True" result="Success" success="True" time="0.053" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ActionIsHeadersTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ActionIsQueryStringTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ActionIsServerVariablesTest" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.GetKeywordTest" executed="True" result="Success" success="True" time="0.109" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterReturnTypeIsDataTableTest" executed="True" result="Success" success="True" time="0.055" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterTypeIsBinaryTest" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterTypeIsDictionaryTest" executed="True" result="Success" success="True" time="0.046" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterTypeIsNestedModelTest" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsCustomerTypeTest" executed="True" result="Success" success="True" time="0.011" asserts="4" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsDateTimeTest" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsDecimalTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsDoubleTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsEnumTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsFloatTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsGuidTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsIntTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsListTest" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsLongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsStringTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsXmlTest" executed="True" result="Success" success="True" time="0.027" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostContextDataTest" executed="True" result="Success" success="True" time="0.012" asserts="1" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostDateCastTest" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonReturnJsonResultTest" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonReturnXmlResultTest" executed="True" result="Success" success="True" time="0.028" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonTest" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                          <test-case name="Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonValidDateTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

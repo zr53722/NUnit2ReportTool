@@ -1,0 +1,5 @@
+E:\小工具\NUnit2ReportTool\NUnit2ReportTool\bin\Release\NUnit2ReportTool.XML
+E:\小工具\NUnit2ReportTool\NUnit2ReportTool\bin\Release\NUnit2ReportTool.exe
+E:\小工具\NUnit2ReportTool\NUnit2ReportTool\bin\Release\NUnit2ReportTool.pdb
+E:\小工具\NUnit2ReportTool\NUnit2ReportTool\obj\x86\Release\NUnit2ReportTool.exe
+E:\小工具\NUnit2ReportTool\NUnit2ReportTool\obj\x86\Release\NUnit2ReportTool.pdb

@@ -1,0 +1,218 @@
+﻿<HTML xmlns:html="http://www.w3.org/Profiles/XHTML-transitional"><HEAD><style type="text/css">
+			body {
+				font:normal 68% verdana,arial,helvetica;
+				color:#000000;
+			}
+
+			span.total {
+				color: #000000;
+				float: left;
+			}
+			span.covered {
+				background: #00df00; 
+				color: #000000;
+				border:#9c9c9c 1px solid;
+				display:inline-block;
+				height:12px;
+				float: left;
+			}
+			span.uncovered {
+				background: #df0000; 
+				color: #000000;
+				border-top:#9c9c9c 1px solid;
+				border-bottom:#9c9c9c 1px solid;
+				border-right:#9c9c9c 1px solid;
+				float: left;
+				height: 12px;
+				}
+			span.ignored {
+				background: #ffff00;
+				color: #000000;
+				border-top:#9c9c9c 1px solid;
+				border-bottom:#9c9c9c 1px solid;
+				border-right:#9c9c9c 1px solid;
+			}
+
+			td {
+				FONT-SIZE: 68%;
+				BORDER-BOTTOM: #dcdcdc 1px solid; 
+				BORDER-RIGHT: #dcdcdc 1px solid;
+			}
+			p {
+				line-height:1.5em;
+				margin-top:0.5em; 
+				margin-bottom:1.0em;
+			}
+			h1 {
+				MARGIN: 0px 0px 5px; 
+				FONT: 165% verdana,arial,helvetica;
+			}
+			h2 {
+				MARGIN-TOP: 1em; 
+				MARGIN-BOTTOM: 0.5em; 
+				FONT: bold 125% verdana,arial,helvetica;
+			}
+			h3 {
+				MARGIN-BOTTOM: 0.5em; 
+				FONT: bold 115% verdana,arial,helvetica;
+			}
+			h4 {
+				MARGIN-BOTTOM: 0.5em; 
+				FONT: bold 100% verdana,arial,helvetica;
+			}
+			h5 {
+				MARGIN-BOTTOM: 0.5em; 
+				FONT: bold 100% verdana,arial,helvetica
+			}
+			h6 {
+				MARGIN-BOTTOM: 0.5em; 
+				FONT: bold 100% verdana,arial,helvetica
+			}	
+			.Error {
+				font-weight:bold; 
+			}
+			.Failure {
+				font-weight:bold; 
+				color:red;
+			}
+			.Ignored {
+				font-weight:bold; 
+			}
+			.FailureDetail {
+				font-size: -1;
+				padding-left: 2.0em;
+				background:#cdcdcd;
+			}
+			.Pass {
+				padding-left:2px;
+			}
+			.TableHeader {
+				background: #efefef;
+				color: #000;
+				font-weight: bold;
+				horizontal-align: center;
+			}
+			a:visited {
+				color: #0000ff;
+			}
+			a {
+				color: #0000ff;
+			}
+			a:active {
+				color: #800000;
+			}
+			a.summarie {
+				color:#000;
+				text-decoration: none;
+			}
+			a.summarie:active {
+				color:#000;
+				text-decoration: none;
+			}
+			a.summarie:visited {
+				color:#000;
+				text-decoration: none;
+			}
+			.description {
+				margin-top:1px;
+				padding:3px;
+				background-color:#dcdcdc;
+				color:#000;
+				font-weight:normal;
+			}
+			.method{
+				color:#000;
+				font-weight:normal;
+				padding-left:5px;
+			}
+			a.method{
+				text-decoration: none;
+				color:#000;
+				font-weight:normal;
+				padding-left:5px;
+			}
+			a.Failure {
+				font-weight:bold; 
+				color:red;
+				text-decoration: none;
+			}
+			a.Failure:visited {
+				font-weight:bold; 
+				color:red;
+				text-decoration: none;
+			}
+			a.Failure:active {
+				font-weight:bold; 
+				color:red;
+				text-decoration: none;
+			}
+			a.error {
+				font-weight:bold; 
+				color:red;
+			}
+			a.error:visited {
+				font-weight:bold; 
+				color:red;
+			}
+			a.error:active {
+				font-weight:bold; 
+				color:red;
+				/*text-decoration: none;
+				padding-left:5px;*/
+			}
+			a.ignored {
+				font-weight:bold; 
+				text-decoration: none;
+				padding-left:5px;
+			}
+			a.ignored:visited {
+				font-weight:bold; 
+				text-decoration: none;
+				padding-left:5px;
+			}
+			a.ignored:active {
+				font-weight:bold; 
+				text-decoration: none;
+				padding-left:5px;
+			}
+	  </style><script language="JavaScript">   
+	  function Toggle(id) {
+	  var element = document.getElementById(id);
+
+		 if ( element.style.display == "none" )
+			element.style.display = "block";
+		 else 
+			element.style.display = "none";
+	  }
+
+	  function ToggleImage(id) {
+	  var element = document.getElementById(id);
+
+		 if ( element.innerText   == "-" )
+			element.innerText   = "+";
+		 else 
+			element.innerText = "-";
+	  }
+	</script></HEAD><body text="#000000" bgColor="#ffffff"><a name="#top"></a><h1 xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><span>单元测试结果</span> - </h1><table width="100%" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><tr><td align="left"><span>生成工具</span>: <a target="_blank" href="http://sourceforge.net/projects/nunit2report/">NUnit2Report</a>   2014-10-30 10:53:31  <a href="#envinfo">环境信息</a></td><td align="right"><span>相关项目</span>: <a href="http://nunit.sourceforge.net/">NUnit</a> <span>和</span> <a href="http://nant.sourceforge.net/">NAnt</a>.
+		</td></tr></table><hr size="1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"></hr><h2 xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">摘要</h2><table border="0" cellpadding="2" cellspacing="0" width="95%" style="border: #dcdcdc 1px solid;" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><tr valign="top" class="TableHeader"><td width="50px"><b>通过</b></td><td width="70px"><b>忽略</b></td><td width="70px"><b>失败</b></td><td colspan="2"><b>成功比例</b></td><td width="70px" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass"><td>65</td><td>0</td><td>0</td><td nowrap="nowrap" width="70px">100.00 %</td><td><span class="covered" style="width:200px"><center>65</center></span><span class="total">
+					 65</span></td><td>15.342</td></tr></table><span xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">说明</span>: <i xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">忽略</i> <span xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">是预期的</span>  <i xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">失败</i> <span xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">是未预料到的</span><hr size="1" width="95%" align="left"></hr><h2>测试集摘要</h2><table border="0" cellpadding="2" cellspacing="0" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="75%" colspan="3"><b>名字</b></td><td width="5%"><b>通过</b></td><td width="5%"><b>忽略</b></td><td width="5%"><b>失败</b></td><td width="10%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFAAAAAAAAAAAAA" class="">ActionExecutorTest</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>27</center></span><span class="total">
+							  27</span></td><td>27</td><td>0</td><td>0</td><td>0.434</td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFCACAAAAAAAAAA" class="">MasterDataAppServiceTest</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>3</center></span><span class="total">
+							  3</span></td><td>3</td><td>0</td><td>0</td><td>6.102</td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFBACAAAAAAAAAA" class="">MasterDataAppServiceTest_1</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>1</center></span><span class="total">
+							  1</span></td><td>1</td><td>0</td><td>0</td><td>0.070</td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFDABAAAAAAAAAA" class="">PerformanceLogScopeTest</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>1</center></span><span class="total">
+							  1</span></td><td>1</td><td>0</td><td>0</td><td>6.231</td></tr><tr valign="top" class="Failure"><td width="25%"><a href="#AFCABAAAAAAAAAA" class="Failure">RepositoryBaseTest</a></td><td nowrap="nowrap" width="6%" align="right"><b>95.24 %</b></td><td width="20%" height="9px"><span class="covered" style="width:190px"><center>20</center></span><span class="uncovered" style="width:10px"><center>1</center></span><span class="total">
+							  21</span></td><td>20</td><td>0</td><td>1</td><td>1.901</td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFBABAAAAAAAAAA" class="">SQLServerDDLGeneratorTest</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>5</center></span><span class="total">
+							  5</span></td><td>5</td><td>0</td><td>0</td><td>0.012</td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFAABAAAAAAAAAA" class="">Test1</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>1</center></span><span class="total">
+							  1</span></td><td>1</td><td>0</td><td>0</td><td>0.001</td></tr><tr valign="top" class="Pass"><td width="25%"><a href="#AFAACAAAAAAAAAA" class="">UserRightsAppServiceTest</a></td><td nowrap="nowrap" width="6%" align="right"><b>100.00 %</b></td><td width="20%" height="9px"><span class="covered" style="width:200px"><center>6</center></span><span class="total">
+							  6</span></td><td>6</td><td>0</td><td>0</td><td>0.558</td></tr></table><hr size="1" width="95%" align="left"></hr><a name="#AFAAAAAAAAAAAAA" id="AFAAAAAAAAAAAAA"></a><h3><span>测试集</span> ActionExecutorTest</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ActionIsFormTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.053</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ActionIsHeadersTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ActionIsQueryStringTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.000</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ActionIsServerVariablesTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.006</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetKeywordTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.109</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ParameterReturnTypeIsDataTableTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.055</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ParameterTypeIsBinaryTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.008</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ParameterTypeIsDictionaryTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.046</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ParameterTypeIsNestedModelTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.016</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsCustomerTypeTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.011</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsDateTimeTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.002</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsDecimalTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsDoubleTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsEnumTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsFloatTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsGuidTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsIntTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsListTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.000</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsLongTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsStringTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.000</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostActionIsXmlTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.027</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostContextDataTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.012</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostDateCastTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.002</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostJsonReturnJsonResultTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.004</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostJsonReturnXmlResultTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.028</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostJsonTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.000</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> PostJsonValidDateTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr></table><a href="#top">返回页首</a><a name="#AFCACAAAAAAAAAA" id="AFCACAAAAAAAAAA"></a><h3><span>测试集</span> MasterDataAppServiceTest</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetCompany</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>4.449</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetCurrentUserGuid</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.058</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetStandardRoleUserByBUGUID</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.203</td></tr></table><a href="#top">返回页首</a><a name="#AFBACAAAAAAAAAA" id="AFBACAAAAAAAAAA"></a><h3><span>测试集</span> MasterDataAppServiceTest_1</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetCurrentUserGuid</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.069</td></tr></table><a href="#top">返回页首</a><a name="#AFDABAAAAAAAAAA" id="AFDABAAAAAAAAAA"></a><h3><span>测试集</span> PerformanceLogScopeTest</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ExecutionTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>6.229</td></tr></table><a href="#top">返回页首</a><a name="#AFCABAAAAAAAAAA" id="AFCABAAAAAAAAAA"></a><h3><span>测试集</span> RepositoryBaseTest</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> CreateTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.068</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> DeleteTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.083</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> FindByIdTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.052</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> FindTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.064</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.089</td></tr><tr valign="top" class="Failure" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%"> <a title="Show/Hide message error" href="javascript:Toggle('AFPACABAAAAAAAAAA')" class="error">SelectExpressionTest_01</a></td><td width="65%" style="padding-left:3px" height="9px"><span class="uncovered" style="width:200px"></span></td><td>失败</td><td>0.198</td></tr><tr style="display: block;" id="AFPACABAAAAAAAAAA" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td colspan="4" class="FailureDetail">System.ArgumentException : 不支持表达式的类型
+参数名: expression在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.InternalCalculateSql(Expression baseExpression, Expression expression) 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 113
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.ProcessBinaryExpression(Expression baseExpression, BinaryExpression expression) 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 290
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.InternalCalculateSql(Expression baseExpression, Expression expression) 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 110
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.ProcessBinaryExpression(Expression baseExpression, BinaryExpression expression) 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 276
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.InternalCalculateSql(Expression baseExpression, Expression expression) 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 110
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.EntityExpressionCalculator.Parse() 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\EntityExpressionCalculator.cs:行号 67
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.Select`1.BuildAttributes() 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\Select.cs:行号 114
+在 Mysoft.MAP2.ServiceFramework.Core.Service.BuildSql.QueryPlan`1.BuildSql() 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.ServiceFramework.Core\Service\BuildSql\QueryPlan.cs:行号 77
+在 Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.&lt;SelectExpressionTest_01&gt;b__c() 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\CommTest\RepositoryBaseTest.cs:行号 153
+在 Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.InitEnvironment(Action action) 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\CommTest\RepositoryBaseTest.cs:行号 428
+在 Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_01() 位置 d:\Map2\运行&amp;建模平台SQL版本-武汉调整\Mysoft.MAP2.Test\CommTest\RepositoryBaseTest.cs:行号 148
+</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_02</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.050</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_03</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.058</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_04</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.067</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_05</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.051</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_06</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.116</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_07</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.067</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_08</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.066</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_09</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.071</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_10</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.063</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_Add</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.085</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_like_all</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.082</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_like_left</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.049</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_like_right</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.060</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> SelectExpressionTest_Subtract</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.084</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> UpdateTest</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.057</td></tr></table><a href="#top">返回页首</a><a name="#AFBABAAAAAAAAAA" id="AFBABAAAAAAAAAA"></a><h3><span>测试集</span> SQLServerDDLGeneratorTest</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> Test_IsTableExists_Error</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.002</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> Test_IsTableExists_OK</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> Test_NameChecker_VerifyName_Error</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> Test_NameChecker_VerifyName_Error2</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.001</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> Test_NameChecker_VerifyName_OK</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.000</td></tr></table><a href="#top">返回页首</a><a name="#AFAABAAAAAAAAAA" id="AFAABAAAAAAAAAA"></a><h3><span>测试集</span> Test1</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> ABC</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.000</td></tr></table><a href="#top">返回页首</a><a name="#AFAACAAAAAAAAAA" id="AFAACAAAAAAAAAA"></a><h3><span>测试集</span> UserRightsAppServiceTest</h3><table border="0" cellpadding="1" cellspacing="1" width="95%"><tr class="TableHeader" valign="top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="85%" colspan="2"><b>名字</b></td><td width="20%" nowrap="nowrap"><b width="100%">状态</b></td><td width="5%" nowrap="nowrap"><b>时间(秒)</b></td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetUserProjectIds</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.189</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetUserProjects</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.092</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> GetUserPublicAccounts</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.071</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> IsAdmin</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.053</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> IsCurrentUserAdmin</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.070</td></tr><tr valign="top" class="Pass" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><td width="20%" class="method"> IsDisabledUser</td><td width="65%" style="padding-left:3px" height="9px"><span class="covered" style="width:200px"></span></td><td>通过</td><td>0.069</td></tr></table><a href="#top">返回页首</a><hr size="1" width="95%" align="left"></hr><a name="envinfo" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"></a><h2 xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">环境信息</h2><table border="0" cellpadding="5" cellspacing="2" width="95%" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts"><tr class="TableHeader"><td>属性</td><td>值</td></tr><tr><td>Nant 路径</td><td></td></tr><tr><td>Nant 版本</td><td></td></tr><tr><td>Build 文件</td><td></td></tr><tr><td>基本目录</td><td></td></tr><tr><td>操作系统</td><td></td></tr><tr><td>.NET CLR 版本</td><td></td></tr></table><a href="#top" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:nunit2report="urn:my-scripts">返回页首</a></body></HTML>

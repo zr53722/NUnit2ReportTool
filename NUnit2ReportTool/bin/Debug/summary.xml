@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mysoft.MAP2.Test</name>
+    </assembly>
+    <members>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.CreateTest">
+            <summary>
+            验证Create方法
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.UpdateTest">
+            <summary>
+            验证Update方法
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.DeleteTest">
+            <summary>
+            验证Delete方法
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.FindByIdTest">
+            <summary>
+            根据GUID查找
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.FindTest">
+            <summary>
+            find查找
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest">
+            <summary>
+            表达式目录树支持情况 and 连接
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_01">
+            <summary>
+            表达式目录树支持情况,这个属于BUG需要修复
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_02">
+            <summary>
+            表达式目录树支持情况,OR连接
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_03">
+            <summary>
+            表达式目录树支持情况,无连接
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_04">
+            <summary>
+            表达式目录树支持情况,null 条件支持
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_like_right">
+            <summary>
+            表达式目录树支持情况,like 条件支持
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_like_left">
+            <summary>
+            表达式目录树支持情况,like 条件支持
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_like_all">
+            <summary>
+            表达式目录树支持情况,like 条件支持
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_05">
+            <summary>
+            表达式目录树支持情况,like 条件支持
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_06">
+            <summary>
+            表达式目录树支持情况,> 条件支持
+            </summary>
+        </member>
+        <!-- 对于成员“M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_07”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_08”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_09”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_10”忽略有格式错误的 XML 注释 -->
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_Add">
+            <summary>
+            表达式目录树支持情况, +号支持 
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.CommTest.RepositoryBaseTest.SelectExpressionTest_Subtract">
+            <summary>
+            表达式目录树支持情况, -号支持 
+            </summary>
+        </member>
+        <member name="F:Mysoft.MAP2.Test.PipelineContext.DefaultAssembliesResolverTest.MysoftAssemblyPrefix">
+            <summary>
+            默认程序集解析器只会解析以mysoft命名作为前缀的程序集
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineContext.DefaultAssembliesResolverTest.GetAssemblies">
+            <summary>
+            获取需要用来解析元数据的程序集
+            </summary>
+            <returns>程序集集合</returns>
+        </member>
+        <member name="T:Mysoft.MAP2.Test.PipelineContext.UserContextTest">
+            <summary>
+                CallUserInfo
+            </summary>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.UserGuid">
+            <summary>
+                Gets or sets the user unique identifier.
+            </summary>
+            <value>
+                The user unique identifier.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.UserCode">
+            <summary>
+            当前用户账号
+            </summary>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.UserKind">
+            <summary>
+            当前用户类型
+            </summary>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.OrganizationId">
+            <summary>
+                Gets or sets the organization identifier.
+            </summary>
+            <value>
+                The organization identifier.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.OrganizationName">
+            <summary>
+                Gets or sets the name of the organization.
+            </summary>
+            <value>
+                The name of the organization.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.BusinessUnitGuid">
+            <summary>
+                Gets or sets the business unit unique identifier.
+            </summary>
+            <value>
+                The business unit unique identifier.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.DepartmentGuid">
+            <summary>
+                Gets or sets the department unique identifier.
+            </summary>
+            <value>
+                The department unique identifier.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.Application">
+            <summary>
+                Gets or sets the application.
+            </summary>
+            <value>
+                The application.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.UserName">
+            <summary>
+                Gets or sets the name of the user.
+            </summary>
+            <value>
+                The name of the user.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.BusinessUnitName">
+            <summary>
+                Gets or sets the name of the business unit.
+            </summary>
+            <value>
+                The name of the business unit.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.BusinessUnitCode">
+            <summary>
+                Gets or sets the business unit code.
+            </summary>
+            <value>
+                The business unit code.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.DepartmentName">
+            <summary>
+                Gets or sets the name of the department.
+            </summary>
+            <value>
+                The name of the department.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.DepartmentCode">
+            <summary>
+                Gets or sets the department code.
+            </summary>
+            <value>
+                The department code.
+            </value>
+        </member>
+        <member name="P:Mysoft.MAP2.Test.PipelineContext.UserContextTest.Token">
+            <summary>
+            当前用户Token
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsStringTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为string类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsEnumTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Enum类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsLongTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Long类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsIntTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Int类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsDecimalTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Decimal类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsDoubleTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Double类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsDateTimeTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为DateTime类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsGuidTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Guid类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsFloatTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为Float类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsListTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为List类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsCustomerTypeTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为自定义类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostDateCastTest">
+            <summary>
+            测试隐式转换用例
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostActionIsXmlTest">
+            <summary>
+            前端以POST方式提交到后端，接受参数为XmlDocument类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonTest">
+            <summary>
+            前端以POST方式提交JSON数据到后端，接受参数为string类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonValidDateTest">
+            <summary>
+            前端以POST方式提交JSON数据到后端，后端实体中有DateTime类型的属性，看是否本正确填充
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonReturnJsonResultTest">
+            <summary>
+            前端以POST方式提交JSON数据到后端，后端直接返回JSON数据格式，验证返回时间是否正确
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostJsonReturnXmlResultTest">
+            <summary>
+            前端以POST方式提交JSON数据到后端，后端直接返回XML数据格式，验证返回时间是否正确
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostContextDataTest">
+            <summary>
+            测试ContextData特性
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterReturnTypeIsDataTableTest">
+            <summary>
+            序列化DataTable验证
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterTypeIsBinaryTest">
+            <summary>
+            二进制序列化
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterTypeIsDictionaryTest">
+            <summary>
+            后台参数为字典，返回类型为dataset 
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.ParameterTypeIsNestedModelTest">
+            <summary>
+            后台嵌套自定义类型
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.GetKeywordTest">
+            <summary>
+            验证关键字,参数为空
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostAction(System.String,System.String)">
+            <summary>
+            POST数据到后端,
+            </summary>
+            <param name="methodInfoName">反射调用的方法名称</param>
+            <param name="value">POST到后端的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.ActionExecutorTest.PostAction(System.String,System.String,System.String)">
+            <summary>
+            POST数据到后端,支持自定义头contentType
+            </summary>
+            <param name="methodInfoName">反射调用的方法名称</param>
+            <param name="value">POST到后端的值</param>
+            <param name="contentType">头部信息,表单的默认头部不能选用此方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.MockContext.MockServerVariables">
+            <summary>
+            该方法只能在TestLibrary的环境下调用
+            </summary>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsString(System.String)">
+            <summary>
+             参数为String类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsEnum(Mysoft.MAP2.Test.PipelineTest.TestCaseService.Colors)">
+            <summary>
+             参数为Enum类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsLong(System.Nullable{System.Int64})">
+            <summary>
+            参数为Long类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsInt(System.Nullable{System.Int32})">
+            <summary>
+            参数为Int类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsDecimal(System.Nullable{System.Decimal})">
+            <summary>
+            参数为Decimal类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsDouble(System.Nullable{System.Double})">
+            <summary>
+            参数为Double类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsDateTime(System.Nullable{System.DateTime})">
+            <summary>
+            参数为Date类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsGuid(System.Nullable{System.Guid})">
+            <summary>
+            参数为Guid类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsFloat(System.Nullable{System.Single})">
+            <summary>
+             参数为Float类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsList(System.String[])">
+            <summary>
+            参数为List类型的测试
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsCustomerType(Mysoft.MAP2.Test.PipelineTest.TestCaseService.Customer,Mysoft.MAP2.Test.PipelineTest.TestCaseService.Salesman)">
+            <summary>
+            参数为多个自定义类型的测试
+            </summary>
+            <param name="customer"></param>
+            <param name="salesman"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostJson(Mysoft.MAP2.Test.PipelineTest.TestCaseService.Customer)">
+            <summary>
+            参数为一个自定义类型的测试
+            </summary>
+            <param name="customer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostDateCast(Mysoft.MAP2.Test.PipelineTest.TestCaseService.Customer)">
+            <summary>
+            测试隐式转换用例
+            </summary>
+            <param name="customer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostJsonValidDate(Mysoft.MAP2.Test.PipelineTest.TestCaseService.CustomerChild)">
+            <summary>
+            参数为一个自定义类型的测试,验证JSON格式的时间填充实体。
+            </summary>
+            <param name="customerChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostJsonReturnJsonResult(Mysoft.MAP2.Test.PipelineTest.TestCaseService.CustomerChild)">
+            <summary>
+            参数为一个自定义类型的测试,验证new JsonResult。
+            </summary>
+            <param name="customerChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostJsonReturnXmlResult(Mysoft.MAP2.Test.PipelineTest.TestCaseService.CustomerChild)">
+            <summary>
+            参数为一个自定义类型的测试,xml序列化。
+            </summary>
+            <param name="customerChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostContextData(System.String)">
+            <summary>
+            测试参数特性ContextData
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.PostActionIsXml(System.Xml.XmlDocument)">
+            <summary>
+            参数为XmlDocument类型的测试
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.ParameterReturnTypeIsDataTable(Mysoft.MAP2.Test.PipelineTest.TestCaseService.CustomerChild)">
+            <summary>
+            验证对DataTable的序列化
+            </summary>
+            <param name="customerChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.ParameterTypeIsBinary(Mysoft.MAP2.Test.PipelineTest.TestCaseService.Salesman)">
+            <summary>
+            验证二进制序列化
+            </summary>
+            <param name="sm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.ParameterTypeIsDictionary(System.Guid,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            验证参数是字典，返回为DataSet
+            </summary>
+            <param name="viewId"></param>
+            <param name="sqlFilters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mysoft.MAP2.Test.PipelineTest.TestCaseService.ParameterTypeIsNestedModel(Mysoft.MAP2.Test.PipelineTest.TestCaseService.Customer)">
+            <summary>
+            参数是嵌套类型
+            </summary>
+            <param name="customer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mysoft.MAP2.Test.PipelineTest.TestCaseService.Customer">
+            <summary>
+            测试实体
+            </summary>
+        </member>
+        <member name="T:Mysoft.MAP2.Test.PipelineTest.TestCaseService.CustomerInfo">
+            <summary>
+            用来测试隐身转换
+            </summary>
+        </member>
+        <member name="T:Mysoft.MAP2.Test.PipelineTest.TestCaseService.CustomerChild">
+            <summary>
+            测试实体
+            </summary>
+        </member>
+        <member name="T:Mysoft.MAP2.Test.PipelineTest.TestCaseService.Salesman">
+            <summary>
+            测试实体
+            </summary>
+        </member>
+    </members>
+</doc>

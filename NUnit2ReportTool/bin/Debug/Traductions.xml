@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Traductions>
+	<Traduction lang="chs" key="UnitTestsResults">单元测试结果</Traduction>
+	<Traduction lang="chs" key="GeneratedBy">生成工具</Traduction>
+	<Traduction lang="chs" key="Designed">相关项目</Traduction>
+	<Traduction lang="chs" key="and">和</Traduction>
+	<Traduction lang="chs" key="EnvironmentInformation">环境信息</Traduction>
+	<Traduction lang="chs" key="Tests">通过</Traduction>
+	<Traduction lang="chs" key="Failures">失败</Traduction>
+	<Traduction lang="chs" key="Errors">忽略</Traduction>
+	<Traduction lang="chs" key="SuccessRate">成功比例</Traduction>
+	<Traduction lang="chs" key="Time">时间(秒)</Traduction>
+	<Traduction lang="chs" key="Summary">摘要</Traduction>
+	<Traduction lang="chs" key="Name">名字</Traduction>
+	<Traduction lang="chs" key="Status">状态</Traduction>
+	<Traduction lang="chs" key="TestSuiteSummary">测试集摘要</Traduction>
+	<Traduction lang="chs" key="TestSuite">测试集</Traduction>
+	<Traduction lang="chs" key="TestCase">测试用例</Traduction>
+	<Traduction lang="chs" key="Backtotop">返回页首</Traduction>
+	<Traduction lang="chs" key="NETCLRVersion">.NET CLR 版本</Traduction>
+	<Traduction lang="chs" key="OperatingSystem">操作系统</Traduction>
+	<Traduction lang="chs" key="BaseDirectory">基本目录</Traduction>
+	<Traduction lang="chs" key="Buildfile">Build 文件</Traduction>
+	<Traduction lang="chs" key="NAntVersion">Nant 版本</Traduction>
+	<Traduction lang="chs" key="NAntLocation">Nant 路径</Traduction>
+	<Traduction lang="chs" key="Value">值</Traduction>
+	<Traduction lang="chs" key="Property">属性</Traduction>
+	<Traduction lang="chs" key="EnvironmentInformation">环境信息</Traduction>
+	<Traduction lang="chs" key="anticipated">是预期的</Traduction>
+	<Traduction lang="chs" key="failures">失败</Traduction>
+	<Traduction lang="chs" key="errors">忽略</Traduction>
+	<Traduction lang="chs" key="unanticipated">是未预料到的</Traduction>
+	<Traduction lang="chs" key="Note">说明</Traduction>
+	<Traduction lang="chs" key="Failure">失败</Traduction>
+	<Traduction lang="chs" key="Error">错误</Traduction>
+	<Traduction lang="chs" key="Pass">通过</Traduction>
+	<Traduction lang="chs" key="Ignored">忽略</Traduction>
+	<Traduction lang="chs" key="Home">首页</Traduction>
+	<Traduction lang="chs" key="Assemblies">程序集</Traduction>
+</Traductions>	
+	

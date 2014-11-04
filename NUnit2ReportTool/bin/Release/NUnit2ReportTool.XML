@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NUnit2ReportTool</name>
+    </assembly>
+    <members>
+        <member name="T:NUnit2ReportTool.Program">
+            <summary>
+            武汉平台开发部.测试:周睿
+            时间：2014-03-28；
+            </summary>
+        </member>
+        <member name="M:NUnit2ReportTool.NUnit2ReportTask.InitializeTask">
+            <summary>
+            Initializes task and ensures the supplied attributes are valid.
+            </summary>
+            <param name="taskNode">Xml node used to define this task instance.</param>
+        </member>
+        <member name="M:NUnit2ReportTool.NUnit2ReportTask.ExecuteTask">
+            <summary>
+            This is where the work is done
+            </summary>
+        </member>
+        <member name="M:NUnit2ReportTool.NUnit2ReportTask.CreateSummaryXmlDoc">
+            <summary>
+            Initializes the XmlDocument instance
+            used to summarize the test results
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit2ReportTool.NUnit2ReportTask.GetPropertyList">
+            <summary>
+            Builds an XsltArgumentList with all
+            the properties defined in the 
+            current project as XSLT parameters.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.Format">
+            <summary>
+            The format of the generated report. 
+            Must be "noframes" or "frames". 
+            Default to "noframes".
+            </summary>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.Language">
+            <summary>
+            The output language.
+            </summary>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.OpenDescription">
+            <summary>
+            Open all description method. Default to "false".
+            </summary>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.Todir">
+            <summary>
+            The directory where the files resulting from the transformation should be written to.
+            </summary>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.OutFilename">
+            <summary>
+            Index of the Output HTML file(s).
+            Default to "index.htm".
+            </summary>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.XmlFileSet">
+            <summary>
+            Set of XML files to use as input
+            </summary>
+        </member>
+        <member name="P:NUnit2ReportTool.NUnit2ReportTask.XmlSummaries">
+            <summary>
+            Set of XML files to use as input
+            </summary>
+        </member>
+    </members>
+</doc>
